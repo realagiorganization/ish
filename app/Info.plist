@@ -82,6 +82,14 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+#if INTERNAL_BUILD
+	<key>UIAppFonts</key>
+	<array>
+		<string>FiraCode-Regular.ttf</string>
+		<string>FiraCode-Medium.ttf</string>
+		<string>FiraCode-SemiBold.ttf</string>
+	</array>
+#endif
 	<key>fuc</key>
 	<string>ICON_STUFF</string>
 </dict>

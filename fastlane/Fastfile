@@ -82,3 +82,26 @@ lane :upload_build do
         api_token: ENV["GH_TOKEN"],
     )
 end
+
+lane :release_testflight do |options|
+    setup_ci
+    run_tests(
+        scheme: "iSH",
+        device: "iPhone 15",
+        clean: true,
+    )
+
+    build(
+        config: "ProjectRelease",
+        output: "iSH-Release.ipa",
+    )
+
+    app_store_connect_api_key
+    changelog = options[:changelog] || "Automated release build"
+    upload_to_testflight(
+        ipa: "iSH-Release.ipa",
+        changelog: changelog,
+        distribute_external: true,
+        groups: ["People"],
+    )
+end

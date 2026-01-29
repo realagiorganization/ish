@@ -1,0 +1,21 @@
+Prompt ID: prompt_ios_app_ish-p00006-5f73fa\nTimestamp: 2026-01-29T12:06:33.768736Z\nSource: discord\nQueue: 1810be93b1db46a2930d8bab4c33d4f4::prompt_queue::discord_1353735964635435100_1353735964635435100_1462822967422488820_realagicorp_iosapp_prompt_ios_app_ish_1462822967422488820_json\nRun: 1/1\nContent:\nDiscord channel: prompt_ios_app_ish\nChannel ID: 1462822967422488820\nQueue label: prompt_ios_app_ish\nMessages aggregated: 9\nAttachments saved for execution (3): attachments/Screenshot_20260121_160756_Chrome-8257f.jpg, attachments/Screenshot_20260121_160806_Chrome-80ffc.jpg, attachments/Screenshot_20260121_160809_Chrome-edcba.jpg | mounted at .prompt_attachments/prompt_ios_app_ish-p00006-5f73fa\nAttachment locations:\n- Screenshot_20260121_160756_Chrome-8257f.jpg (196103 bytes) -> .prompt_attachments/prompt_ios_app_ish-p00006-5f73fa/Screenshot_20260121_160756_Chrome-8257f.jpg\n- Screenshot_20260121_160806_Chrome-80ffc.jpg (169019 bytes) -> .prompt_attachments/prompt_ios_app_ish-p00006-5f73fa/Screenshot_20260121_160806_Chrome-80ffc.jpg\n- Screenshot_20260121_160809_Chrome-edcba.jpg (236797 bytes) -> .prompt_attachments/prompt_ios_app_ish-p00006-5f73fa/Screenshot_20260121_160809_Chrome-edcba.jpg\n\nDiscord channel: prompt_ios_app_ish | ID: 1462822967422488820 | Reaction filter: :white_check_mark:
+
+Messages with required reaction:
+[1] (2026-01-19T14:56:43.499+00:00 | realagiadmin_29264 | id=1462823093792673873) Work in https://github.com/realagiorganization/ish
+[2] (2026-01-19T14:57:21.47+00:00 | realagiadmin_29264 | id=1462823253054853304) Add prompting to this:
+
+ “Do this once according to credentials found in #prompt_credentials-secrets-passwords🔑🗝🔐🔒🔓🔏🪪🤐  
+
+Open the project in Xcode, open iSH.xcconfig, and change ROOT_BUNDLE_IDENTIFIER to something unique. You'll also need to update the development team ID in the project (not target!) build settings. Then click Run.”
+[3] (2026-01-19T15:42:52.285+00:00 | mermaid10121 | id=1462834706923126896) Develop GitHub actions that build test and deploy release version of app to TestFlight, add GitHub actions badges
+[4] (2026-01-20T08:46:10.469+00:00 | mermaid10121 | id=1463092229571739680) Create internal build that ships with FiraCode fonts
+[5] (2026-01-21T21:08:20.509+00:00 | realagiadmin_29264 | id=1463641389962231809) Test/screenshot GitHub Pages website
+Attachments: Screenshot_20260121_160756_Chrome.jpg: /out/1353735964635435100/_media/Screenshot_20260121_160756_Chrome-8257f.jpg ; Screenshot_20260121_160806_Chrome.jpg: /out/1353735964635435100/_media/Screenshot_20260121_160806_Chrome-80ffc.jpg ; Screenshot_20260121_160809_Chrome.jpg: /out/1353735964635435100/_media/Screenshot_20260121_160809_Chrome-edcba.jpg
+[6] (2026-01-22T08:25:01.118+00:00 | mermaid10121 | id=1463811681258967175) Add badges for each GitHub action to README and gif of ui testing
+[7] (2026-01-25T20:21:14.876+00:00 | realagiadmin_29264 | id=1465079089860837448) Create DEVPLAN.md outlining steps for developing this project, mention there all external dependencies that leverage parts of functionality needed
+
+Create BDD test suite describing principal use cases
+
+Create GitHub actions launching BDD suite and add its badge to README. If behavior includes either console or UI / Web user interaction, record it with vhs action and post gif into README
+[8] (2026-01-27T21:26:36.014+00:00 | drybox | id=1465820312036970546) always_on_hint
+[9] (2026-01-29T09:28:20.781+00:00 | mermaid10121 | id=1466364333260017675) Write bdd test that uses encrypted uploaded into GitHub actions llm keys to make a request to installed via codex cli oh my opencode cli in tmux terminal, make sure that vhs tape of it is captured and presented in readme md by GitHub action separately\n

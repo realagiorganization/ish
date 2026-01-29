@@ -105,6 +105,9 @@
 		497F6D87254E62E100C82F46 /* libish.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB13F7DC200AD81D003D1C4D /* libish.a */; };
 		49FF844B2A06249F00850B7A /* ExceptionExfiltrator.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FF844A2A06249F00850B7A /* ExceptionExfiltrator.m */; };
 		BB0F552E239F8A790032A2A1 /* Icons.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB0F552D239F8A790032A2A1 /* Icons.plist */; };
+		707AAEE4FBC99BB159A1E3D2 /* FiraCode-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B9312611144BBAC136B147A /* FiraCode-Regular.ttf */; };
+		21357701C473525D4795575E /* FiraCode-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F9B6C51B732150EA0AF702C /* FiraCode-Medium.ttf */; };
+		411AE87243F6619E13892526 /* FiraCode-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2017FF96A6D152B8CFA8C0C0 /* FiraCode-SemiBold.ttf */; };
 		BB10E5C9248DBAAC009C7A74 /* libarchive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB10E5C8248DBAA1009C7A74 /* libarchive.a */; };
 		BB10E5D0248DC21D009C7A74 /* Roots.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB10E5CF248DC21D009C7A74 /* Roots.storyboard */; };
 		BB123ACC26C9EFD900419CDA /* LinuxTTY.c in Sources */ = {isa = PBXBuildFile; fileRef = BB123ACB26C9EFD900419CDA /* LinuxTTY.c */; };
@@ -607,6 +610,10 @@
 		BB0B88172589662A00208600 /* reworked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reworked.png; sourceTree = "<group>"; };
 		BB0B88202589734A00208600 /* notsurewhatthisis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notsurewhatthisis.png; sourceTree = "<group>"; };
 		BB0C03002AEEC85500E5ECBB /* gen_apk_repositories.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = gen_apk_repositories.py; path = app/gen_apk_repositories.py; sourceTree = "<group>"; };
+		9B9312611144BBAC136B147A /* FiraCode-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FiraCode-Regular.ttf; sourceTree = "<group>"; };
+		9F9B6C51B732150EA0AF702C /* FiraCode-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FiraCode-Medium.ttf; sourceTree = "<group>"; };
+		2017FF96A6D152B8CFA8C0C0 /* FiraCode-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FiraCode-SemiBold.ttf; sourceTree = "<group>"; };
+		212EA5F67751A5A7388B5D1C /* LICENSE_FIRACODE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_FIRACODE.txt; sourceTree = "<group>"; };
 		BB0DF6F22CC4B01000EFECAE /* fchdir.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fchdir.c; sourceTree = "<group>"; };
 		BB0DF6F32CC4B01000EFECAE /* fchdir.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fchdir.h; sourceTree = "<group>"; };
 		BB0F552D239F8A790032A2A1 /* Icons.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Icons.plist; sourceTree = "<group>"; };
@@ -1044,6 +1051,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C68414409048F4A9360F37CD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9B9312611144BBAC136B147A /* FiraCode-Regular.ttf */,
+				9F9B6C51B732150EA0AF702C /* FiraCode-Medium.ttf */,
+				2017FF96A6D152B8CFA8C0C0 /* FiraCode-SemiBold.ttf */,
+				212EA5F67751A5A7388B5D1C /* LICENSE_FIRACODE.txt */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		BB792B521F96D90D00FFB7A4 /* app */ = {
 			isa = PBXGroup;
 			children = (
@@ -1067,6 +1085,7 @@
 				BB4A53991FAA40FD00A72ACE /* terminal */,
 				BB235532235D472F00139E00 /* Devices */,
 				BBFB557321586C7600DFE6DE /* About */,
+				C68414409048F4A9360F37CD /* Fonts */,
 				BB10E5C1248DB961009C7A74 /* Roots */,
 				BBFB557221586C6600DFE6DE /* Utilities */,
 				BBBF7B5B2415CDBB00EC4C14 /* Settings.bundle */,
@@ -1775,6 +1794,9 @@
 				BB2B4DAD231D998300CB578B /* term.js in Resources */,
 				BB38599A27BCEE6B000A1082 /* is.png in Resources */,
 				BB38599E27BCEE6B000A1082 /* circular.png in Resources */,
+				707AAEE4FBC99BB159A1E3D2 /* FiraCode-Regular.ttf in Resources */,
+				21357701C473525D4795575E /* FiraCode-Medium.ttf in Resources */,
+				411AE87243F6619E13892526 /* FiraCode-SemiBold.ttf in Resources */,
 				BB38599F27BCEE6B000A1082 /* icon1337.png in Resources */,
 				BB3859A127BCEE6B000A1082 /* iinhash.png in Resources */,
 				BB38599727BCEE6B000A1082 /* freeiosterminal.png in Resources */,
@@ -1803,6 +1825,9 @@
 				BBEF1984268066D1001225BD /* About.storyboard in Resources */,
 				BBEF1985268066D1001225BD /* Terminal.storyboard in Resources */,
 				BBEF1986268066D1001225BD /* Icons.plist in Resources */,
+				707AAEE4FBC99BB159A1E3D2 /* FiraCode-Regular.ttf in Resources */,
+				21357701C473525D4795575E /* FiraCode-Medium.ttf in Resources */,
+				411AE87243F6619E13892526 /* FiraCode-SemiBold.ttf in Resources */,
 				BBEF1987268066D1001225BD /* uninspired.png in Resources */,
 				BB38598527BCEC84000A1082 /* ishcolontildehash.png in Resources */,
 				BBEF1988268066D1001225BD /* iinhash.png in Resources */,

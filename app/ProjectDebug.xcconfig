@@ -1,3 +1,5 @@
 #include "XcodeDebug.xcconfig"
 #include "Project.xcconfig"
 #include "NotLinux.xcconfig"
+
+INFOPLIST_PREPROCESSOR_DEFINITIONS = $(inherited) INTERNAL_BUILD=1
