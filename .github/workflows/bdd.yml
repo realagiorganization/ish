@@ -1,0 +1,61 @@
+name: BDD Suite
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  bdd:
+    runs-on: ubuntu-latest
+    env:
+      CODEX_API_KEY: ${{ secrets.CODEX_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install system deps
+        run: sudo apt-get update && sudo apt-get install -y tmux
+
+      - name: Install BDD deps
+        run: python3 -m pip install --upgrade pip && pip install -r tests/bdd/requirements.txt
+
+      - name: Run BDD suite
+        run: tests/bdd/run_bdd.sh
+
+      - name: Record BDD VHS
+        uses: charmbracelet/vhs-action@v2
+        with:
+          tape: tests/bdd/tapes/bdd-suite.tape
+
+      - name: Record Codex CLI VHS
+        if: env.CODEX_API_KEY != '' || env.OPENAI_API_KEY != ''
+        uses: charmbracelet/vhs-action@v2
+        with:
+          tape: tests/bdd/tapes/codex-cli.tape
+
+      - name: Upload VHS artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: bdd-vhs
+          path: docs/assets/*.gif
+
+      - name: Commit updated VHS gifs
+        if: github.event_name != 'pull_request'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update BDD VHS captures"
+          file_pattern: docs/assets/*.gif

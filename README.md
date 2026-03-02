@@ -1,6 +1,12 @@
 # [iSH](https://ish.app)
 
-[![Build Status](https://github.com/ish-app/ish/actions/workflows/ci.yml/badge.svg)](https://github.com/ish-app/ish/actions)
+[![CI](https://github.com/realagiorganization/ish/actions/workflows/ci.yml/badge.svg)](https://github.com/realagiorganization/ish/actions/workflows/ci.yml)
+[![BDD](https://github.com/realagiorganization/ish/actions/workflows/bdd.yml/badge.svg)](https://github.com/realagiorganization/ish/actions/workflows/bdd.yml)
+[![TestFlight Release](https://github.com/realagiorganization/ish/actions/workflows/testflight-release.yml/badge.svg)](https://github.com/realagiorganization/ish/actions/workflows/testflight-release.yml)
+[![Upload Build](https://github.com/realagiorganization/ish/actions/workflows/upload-build.yml/badge.svg)](https://github.com/realagiorganization/ish/actions/workflows/upload-build.yml)
+[![Deploy Site](https://github.com/realagiorganization/ish/actions/workflows/deploy-site.yml/badge.svg)](https://github.com/realagiorganization/ish/actions/workflows/deploy-site.yml)
+[![Update Alpine Repo](https://github.com/realagiorganization/ish/actions/workflows/update-alpine-repo.yml/badge.svg)](https://github.com/realagiorganization/ish/actions/workflows/update-alpine-repo.yml)
+[![Autolabel](https://github.com/realagiorganization/ish/actions/workflows/autolabel.yml/badge.svg)](https://github.com/realagiorganization/ish/actions/workflows/autolabel.yml)
 [![goto counter](https://img.shields.io/github/search/ish-app/ish/goto.svg)](https://github.com/ish-app/ish/search?q=goto)
 [![fuck counter](https://img.shields.io/github/search/ish-app/ish/fuck.svg)](https://github.com/ish-app/ish/search?q=fuck)
 [![shit counter](https://img.shields.io/github/search/ish-app/ish/shit.svg)](https://github.com/ish-app/ish/search?q=shit)
@@ -36,7 +42,11 @@ You'll need these things to build the project:
 
 ## Build for iOS
 
+Do this once according to credentials found in #prompt_credentials-secrets-passwords🔑🗝🔐🔒🔓🔏🪪🤐.
+
 Open the project in Xcode, open iSH.xcconfig, and change `ROOT_BUNDLE_IDENTIFIER` to something unique. You'll also need to update the development team ID in the project (not target!) build settings. Then click Run. There are scripts that should do everything else automatically. If you run into any problems, open an issue and I'll try to help.
+
+Internal Debug builds include bundled FiraCode fonts for the terminal font picker.
 
 ## Build command line tool for testing
 
@@ -67,3 +77,15 @@ Possibly the most interesting thing I wrote as part of iSH is the interpreter. I
 Unfortunately, I made the decision to write nearly all of the gadgets in assembly language. This was probably a good decision with regards to performance (though I'll never know for sure), but a horrible decision with regards to readability, maintainability, and my sanity. The amount of bullshit I've had to put up with from the compiler/assembler/linker is insane. It's like there's a demon in there that makes sure my code is sufficiently deformed, and if not, makes up stupid reasons why it shouldn't compile. In order to stay sane while writing this code, I've had to ignore best practices in code structure and naming. You'll find macros and variables with such descriptive names as `ss` and `s` and `a`. Assembler macros nested beyond belief. And to top it off, there are almost no comments.
 
 So a warning: Long-term exposure to this code may cause loss of sanity, nightmares about GAS macros and linker errors, or any number of other debilitating side effects. This code is known to the State of California to cause cancer, birth defects, and reproductive harm.
+
+# QA artifacts
+
+## GitHub Pages UI smoke test
+
+![GitHub Pages UI](docs/assets/github-pages-ui.gif)
+Screenshots: `docs/GITHUB_PAGES_SCREENSHOTS.md`
+
+## CI VHS captures
+
+![BDD suite](docs/assets/bdd-suite.gif)
+![Codex CLI](docs/assets/codex-cli.gif)
