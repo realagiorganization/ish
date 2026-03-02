@@ -6,3 +6,4 @@
 - GitHub Pages screenshots from the prompt attachments represent the current UI and can be stored under `docs/assets/` for README display.
 - VHS-generated GIFs cannot be recorded locally here, so placeholder GIFs are committed and the `bdd` workflow will overwrite them on CI.
 - The TestFlight release workflow should only run for the canonical repo `realagiorganization/ish`.
+- The "always_on_hint" note lacks actionable context; assuming it refers to keeping workflows active, and no extra code changes are required because CI, BDD, and TestFlight pipelines already run on pushes/releases.
